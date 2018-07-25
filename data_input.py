@@ -39,3 +39,22 @@ str.split(';')
 
 tmp = D[D.name == 'eeeb4783-6acb-4e83-9adf-fc0d2ee1f74d.jpg'].coordinate
 tmp
+
+
+
+for i in os.listdir('C:/COS'):
+    if i.endswith('.txt'):
+        print(i)
+['myfile_'+x for x in os.listdir('C:/COS') if x.endswith('.txt')]
+
+
+
+for root, dirs, files in os.walk('C:/DNOX'):
+    print(root)
+    # This prints all full path of dir (including the root path)
+    
+    print(dirs)
+    # This prints all folders in the full path shown above correspondingly
+    
+    print(files)
+    # This prints all file names (NOT folder) in the full path shown in the first print above
