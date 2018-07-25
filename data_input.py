@@ -58,3 +58,11 @@ for root, dirs, files in os.walk('C:/DNOX'):
     
     print(files)
     # This prints all file names (NOT folder) in the full path shown in the first print above
+
+    
+    
+import glob, os
+os.chdir("C:/COS")
+for file in glob.glob("*.txt"):
+    print(file)
+    
